@@ -46,6 +46,7 @@ const Login = ({ navigation }) => {
               <TextInput
                 style={styles.firstInput}
                 placeholder="Email"
+                autoCapitalize="none"
                 onChangeText={(text) => {
                   setEmail(text);
                 }}

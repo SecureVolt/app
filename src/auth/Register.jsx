@@ -45,8 +45,6 @@ const Register = ({ navigation }) => {
     return true;
   };
 
-  console.log(!validPassword || !matchPassword || !emailReg.test(email));
-
   return (
     <KeyboardAvoidingView
       behavior={Platform.OS === "ios" ? "padding" : "height"}
@@ -68,6 +66,7 @@ const Register = ({ navigation }) => {
               <TextInput
                 style={styles.firstInput}
                 placeholder="Email"
+                autoCapitalize="none"
                 onChangeText={(text) => {
                   setEmail(text);
                 }}
